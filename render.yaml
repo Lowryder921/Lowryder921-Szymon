@@ -1,8 +1,10 @@
 services:
-  - type: worker
-    name: firos-magic-bot
+  - type: web
+    name: firos-bot
     env: python
-    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python main.py"
     autoDeploy: true
+    repo: https://github.com/Lowryder921/Lowryder921-Szymon
+    branch: main
+    plan: free
