@@ -1,8 +1,7 @@
 services:
-  - type: worker
-    name: firos-bot
+  - type: web
+    name: bloomx-telegram-bot
     env: python
+    buildCommand: ""
+    startCommand: python bot.py
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
-    autoDeploy: true
